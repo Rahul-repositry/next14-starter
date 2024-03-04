@@ -17,6 +17,22 @@ body {
   color: var(--text);
 }
 
+/* Target all scrollbars, with vendor prefixes for compatibility */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--bgSoft);
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 a {
   text-decoration: none;
   color: inherit;
